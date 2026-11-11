@@ -114,6 +114,91 @@ body{background:#f8f8f8}
   .eyebrow{font-size:9px}
 }
 
+
+/* V4 — refinamento da primeira dobra e dos componentes, sem redesenhar a MÜD. */
+:root{--red:#e91427;--ink:#0b0b0d;--paper:#f9f9fa}
+body{background:#f9f9fa;-webkit-font-smoothing:antialiased}
+.header{background:#090909;border-bottom:1px solid rgba(255,255,255,.10)}
+.header-inner{gap:clamp(12px,1.5vw,23px)}
+.nav{gap:clamp(10px,1.32vw,22px);margin-left:3px}
+.nav a{font-size:12px;transition:color .2s ease}
+.nav a:hover,.nav a:focus-visible{color:#fff}
+.search{border-color:#424246;border-radius:10px;background:rgba(255,255,255,.025);transition:border-color .2s,background .2s}
+.search:focus-within{border-color:rgba(233,20,39,.8);background:#19191b}
+.hero{height:405px;min-height:405px;background:#1d0206}
+.hero-scene{isolation:isolate}
+.scene-assembly{width:1060px;height:706.667px;right:-8px;top:-124px;filter:contrast(1.04) saturate(1.07)}
+.hero:before{background:linear-gradient(90deg,rgba(13,0,3,.96) 0%,rgba(35,1,5,.92) 24%,rgba(91,2,10,.73) 38%,rgba(60,0,7,.29) 52%,transparent 73%);z-index:1}
+.hero:after{background:linear-gradient(0deg,rgba(0,0,0,.16),transparent 26%);z-index:2}
+.hero-contents{min-height:405px;z-index:3}
+.hero-copy{margin:0 0 0 14px;max-width:545px;transform:translateY(-2px)}
+.eyebrow{font-size:10px;letter-spacing:.26em;line-height:1.55}
+.eyebrow:after{width:67px;margin-left:16px;opacity:.7}
+.display{font-family:MudAnton,Impact,"Arial Narrow",sans-serif;font-size:clamp(65px,5.6vw,82px);font-style:normal;font-weight:400;line-height:.96;letter-spacing:-.005em;max-width:none;margin:18px 0 13px;filter:drop-shadow(0 3px 12px rgba(0,0,0,.20))}
+.display .hero-line{display:block;white-space:nowrap}
+.display .hero-line.second{font-size:1.14em;letter-spacing:-.012em}
+.display .hero-line.second .red{display:inline;color:#f20a23}
+.hero-description{font-size:14px;line-height:1.42;max-width:315px;margin:13px 0 19px;color:#f4eeee}
+.lightbutton{border-radius:8px;padding:13px 19px;box-shadow:0 7px 23px #0002;transition:background .2s,transform .2s}
+.lightbutton:hover{background:#f0efef;transform:translateY(-2px)}
+.hero-dots{margin-top:18px}
+.category-section{padding-top:17px;padding-bottom:9px}
+.category-grid{gap:11px}
+.category{height:92px;border-radius:12px;background:#f4f4f5;border:1px solid #ebebec;box-shadow:0 3px 14px rgba(0,0,0,.025);transition:transform .2s,box-shadow .2s,border-color .2s}
+.category:hover{transform:translateY(-3px);box-shadow:0 9px 20px rgba(0,0,0,.075);border-color:#d5d5d8}
+.category img{width:56%;object-position:center 55%;filter:contrast(1.05) saturate(.92)}
+.category:after{background:linear-gradient(90deg,transparent 2%,rgba(246,246,247,.20) 29%,#f4f4f5 56%,#f4f4f5 100%)}
+.category-copy{width:62%;padding-right:7px}
+.category strong{font-size:clamp(11px,1.04vw,16px);font-weight:900;line-height:1.02;letter-spacing:-.04em}
+.category small{font-size:10px;color:#444;margin-top:8px}
+.benefits{margin-bottom:17px;padding-bottom:13px}
+.benefit span{font-size:11.5px}
+.benefit svg.icon{width:29px;height:29px}
+.feature{margin:9px 0 19px;border-radius:12px;box-shadow:0 3px 16px rgba(0,0,0,.045)}
+.feature-content{padding:28px 36px}
+.filter{border-color:#e9e9ea;box-shadow:0 3px 14px rgba(0,0,0,.025);position:sticky;top:93px}
+.catalog{gap:23px}
+.product-grid{column-gap:14px;row-gap:23px}
+.product .photo{background:#e6e6e6;border-radius:11px;transition:box-shadow .25s ease}
+.product .photo:hover{box-shadow:0 5px 16px rgba(0,0,0,.13)}
+.product img{transition:transform .32s ease}
+.product .photo:hover img{transform:scale(1.045)}
+.ptext{padding:10px 3px 0}
+.pname{font-size:12px;line-height:1.35}
+.price{font-size:17px;letter-spacing:-.025em}
+.installment{font-size:10.5px;line-height:1.4;color:#666}
+.add{border-radius:8px;min-height:34px;transition:background .2s,transform .2s}
+.add:hover{background:#b9091b;transform:translateY(-1px)}
+.heart{box-shadow:0 2px 10px rgba(0,0,0,.14)}
+.footer{background:#09090a}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+@media(max-width:1200px){.nav{gap:12px}.nav a{font-size:11px}.category-copy{width:62%}.category strong{font-size:12px}.scene-assembly{width:1010px;height:673.333px;right:-70px;top:-118px}.hero-copy{margin-left:4px}}
+@media(max-width:900px){
+.hero,.hero-contents{min-height:390px;height:390px}
+.scene-assembly{width:940px;height:626.667px;right:-195px;top:-95px}
+.hero:before{background:linear-gradient(90deg,rgba(15,0,4,.96) 0%,rgba(42,0,6,.81) 42%,rgba(40,0,5,.15) 80%)}
+.display{font-size:clamp(54px,7.4vw,70px)}
+.filter{position:static}
+.category strong{font-size:13px}
+.header-inner{position:relative}
+.mobile-top{display:block}
+.header .search{display:none;position:absolute;top:calc(100% + 6px);left:16px;right:16px;margin:0;width:auto;max-width:none;height:44px;background:#151515;border:1px solid #454545;box-shadow:0 12px 27px #0005;z-index:45}
+.header.searching .search{display:flex}
+}
+@media(max-width:560px){
+.hero,.hero-contents{min-height:400px;height:400px}
+.scene-assembly{width:815px;height:543.333px;right:-245px;top:-58px}
+.hero:before{background:linear-gradient(90deg,rgba(16,0,4,.97) 0%,rgba(40,0,7,.82) 52%,rgba(26,0,5,.20) 100%)}
+.hero-copy{max-width:300px;margin-left:3px;transform:none}
+.display{font-size:clamp(53px,12vw,65px);line-height:.98;margin:17px 0}
+.display .hero-line.second{font-size:1.10em}
+.hero-description{max-width:236px;font-size:12.5px;line-height:1.45}
+.eyebrow{font-size:9px}
+.category{height:86px}.category-copy{width:65%;padding:0 4px}.category strong{font-size:11px}.category img{width:58%}.category small{font-size:9px;margin-top:6px}
+.benefit span{font-size:10px}.catalog{gap:13px}.pname{font-size:11px}.price{font-size:15px}.product .photo{height:172px}
+}
+@media(prefers-reduced-motion:reduce){.category,.add,.product img,.lightbutton{transition:none!important}}
+
 </style>
 </head>
 <body>
@@ -130,7 +215,7 @@ body{background:#f8f8f8}
 <symbol id="i-menu" viewbox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"></path></symbol>
 </svg>
 <div class="topbar"><div class="item"><svg class="icon"><use href="#i-truck"></use></svg>FRETE GRÁTIS PARA TODO O BRASIL</div><span class="line"></span><div class="item"><svg class="icon"><use href="#i-card"></use></svg>PARCELE EM ATÉ 6X SEM JUROS</div><span class="line"></span><div class="item"><svg class="icon"><use href="#i-shield"></use></svg>COMPRA SEGURA</div></div>
-<header class="header"><div class="wrap header-inner"><a aria-label="Müd Store início" class="logo" href="#inicio"><img alt="Müd Store" src="assets/logo-mud-original.png"/></a><button aria-label="Abrir menu" class="mobile-menu-button bare" onclick="toggleMobileMenu(true)" type="button">☰</button><nav class="nav"><a class="active" href="#inicio">Início</a><a href="#arara">Arara</a><a href="#catalogo">Camisetas</a><a href="#catalogo">Camisetas de time</a><a href="#catalogo">Tênis</a><a href="#catalogo">Calções</a><a href="#marcas">Marcas</a></nav><label class="search"><svg class="icon"><use href="#i-search"></use></svg><input aria-label="Buscar produtos" id="searchBox" placeholder="Buscar produto, marca ou tamanho..."/></label><div class="actions"><button aria-label="Menu" class="bare mobile-top" onclick="document.getElementById('catalogo').scrollIntoView()"><svg class="icon"><use href="#i-menu"></use></svg></button><button aria-label="Minha conta" class="bare" onclick="showInfo('Minha conta','Área de cadastro e login a integrar quando a loja estiver pronta.')"><svg class="icon"><use href="#i-user"></use></svg></button><button aria-label="Sacola" class="bare" onclick="showBag()"><svg class="icon"><use href="#i-bag"></use></svg><span class="count" id="bagCount">0</span></button></div></div></header>
+<header class="header"><div class="wrap header-inner"><a aria-label="Müd Store início" class="logo" href="#inicio"><img alt="Müd Store" src="assets/logo-mud-original.png"/></a><button aria-label="Abrir menu" class="mobile-menu-button bare" onclick="toggleMobileMenu(true)" type="button">☰</button><nav class="nav"><a class="active" href="#inicio">Início</a><a href="#arara">Arara</a><a href="#catalogo">Camisetas</a><a href="#catalogo">Camisetas de time</a><a href="#catalogo">Tênis</a><a href="#catalogo">Calções</a><a href="#marcas">Marcas</a></nav><label class="search"><svg class="icon"><use href="#i-search"></use></svg><input aria-label="Buscar produtos" id="searchBox" placeholder="Buscar produto, marca ou tamanho..."/></label><div class="actions"><button aria-label="Buscar produtos" class="bare mobile-top" onclick="toggleMobileSearch()"><svg class="icon"><use href="#i-search"></use></svg></button><button aria-label="Minha conta" class="bare" onclick="showInfo('Minha conta','Área de cadastro e login a integrar quando a loja estiver pronta.')"><svg class="icon"><use href="#i-user"></use></svg></button><button aria-label="Sacola" class="bare" onclick="showBag()"><svg class="icon"><use href="#i-bag"></use></svg><span class="count" id="bagCount">0</span></button></div></div></header>
 <div aria-hidden="true" class="mobile-nav" id="mobileNav"><div class="mobile-nav-head"><strong>EXPLORAR MÜD</strong><button aria-label="Fechar menu" onclick="toggleMobileMenu(false)">✕</button></div><a href="#inicio" onclick="toggleMobileMenu(false)">Início</a><a href="#arara" onclick="goCategory('Camisetas');toggleMobileMenu(false)">Camisetas</a><a href="#arara" onclick="goCategory('Camisetas de time');toggleMobileMenu(false)">Camisetas de time</a><a href="#catalogo" onclick="goCategory('Tênis');toggleMobileMenu(false)">Tênis</a><a href="#catalogo" onclick="goCategory('Calções');toggleMobileMenu(false)">Calções</a><a href="#catalogo" onclick="toggleMobileMenu(false)">Todas as peças</a></div><main>
 <section class="hero" id="inicio"><div class="hero-scene" aria-hidden="true"><div class="scene-assembly">
 <div class="scene-base"></div>
@@ -139,7 +224,7 @@ body{background:#f8f8f8}
 <img class="scene-part scene-shoes" src="assets/hero-shoes-original.webp" alt="">
 <img class="scene-part scene-bag" src="assets/hero-bag-original.webp" alt="">
 <div class="scene-light scene-light-one"></div><div class="scene-light scene-light-two"></div>
-</div></div><div class="wrap hero-contents"><div class="hero-copy"><div class="eyebrow">MODA E ESTILO EM LAGES, SC</div><h1 class="display"><span class="hero-line">ESTILO</span><span class="hero-line second"><em class="red">QUE</em> MARCA.</span></h1><p class="hero-description">Peças selecionadas para quem quer presença, identidade e atitude.</p><a class="lightbutton" href="#catalogo">Ver coleção <svg class="icon sm"><use href="#i-arrow"></use></svg></a><div class="hero-dots"><i></i><i></i><i></i></div></div></div></section>
+</div></div><div class="wrap hero-contents"><div class="hero-copy"><div class="eyebrow">MODA E ESTILO EM LAGES, SC</div><h1 class="display"><span class="hero-line">ESTILO QUE</span><span class="hero-line second"><span class="red">MARCA.</span></span></h1><p class="hero-description">Peças selecionadas para quem quer presença, identidade e atitude.</p><a class="lightbutton" href="#catalogo">Ver coleção <svg class="icon sm"><use href="#i-arrow"></use></svg></a><div class="hero-dots"><i></i><i></i><i></i></div></div></div></section>
 <section class="section-light category-section" id="arara"><div class="wrap"><div class="category-grid">
 <a class="category" data-category="Camisetas" href="#catalogo"><img alt="Camisetas reais" src="assets/camiseta-preta.jpg"/><span class="category-copy"><strong>Camisetas</strong><small>Ver produtos →</small></span></a>
 <a class="category" data-category="Camisetas de time" href="#catalogo"><img alt="Camisas de time" src="assets/camiseta-time.jpg"/><span class="category-copy"><strong>Camisetas<br/>de time</strong><small>Ver produtos →</small></span></a>
@@ -195,5 +280,7 @@ document.querySelectorAll('.nav a').forEach(a=>{let t=a.textContent.trim().toLow
 // Enable mobile category menu via the real hamburger button.
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){toggleCart(false);toggleMobileMenu(false)}});
 render();
+
+function toggleMobileSearch(){const header=document.querySelector('.header');if(!header)return;header.classList.toggle('searching');if(header.classList.contains('searching')){const input=document.getElementById('searchBox');if(input)input.focus();}}
 </script>
 </body></html>
